@@ -1,0 +1,33 @@
+.contact{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.contact ul{
+    font-size: x-large;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+.contact ul li{
+    margin: 10% 0%;
+}
+.contact ul li:nth-child(1):before{
+    content: 'place';
+    font-family: 'Material Icons';
+}
+.contact ul li:nth-child(2):before{
+    content: 'email';
+    font-family: 'Material Icons';
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:700px) {
+    .contact ul{
+        font-size: medium;
+    }
+
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: futura;
+    src: url(./FONT/Futura.ttf);
+}
+@font-face {
+    font-family: Motserrat;
+    src: url(./FONT/Montserrat-Medium.ttf);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Motserrat;
+    
+}
+body{
+    text-align: center!important;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    overflow-x: hidden;
+    background-color: #203647;
+    z-index: 1;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    transition: 400ms ease-in-out;
+    z-index: 1;
+    overflow-x: hidden;
+    transform-origin: left;
+    background-color:#EEFBFB;
+}
+header{
+    padding: 30px 50px;
+    color: black;
+}
+header a{
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+}
+
+header> div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo:hover{
+    color: green;
+}
+#navbarText{
+   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#navbarText ul{
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+}
+#navbarText ul li{
+    margin: 0px 10px;
+    list-style: none;
+    display: inline-block;
+}
+#navbarText ul li a{
+    border-radius: 5em;
+    padding: 10px 15px;
+
+}
+#navbarText ul li:hover a{
+    transition-timing-function: linear;
+    transition-duration: 250ms;
+    background-color: green;
+    color: white;
+}
+
+#hamburger-menu{
+    cursor: pointer;
+    display:none;
+    visibility: hidden;
+    padding: 0;
+}
+
+/* Mobile */
+#mobile_menu{
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+    position: absolute !important;
+    display: flex;
+    right: 10%;
+}
+#mobile_menu ul li{
+   margin: 4rem 0;
+   list-style: none;
+}
+#mobile_menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+    header{
+        font-size: smaller;
+        padding: 30px 30px;
+        color: black;
+    }
+    header .Logo{
+       width: 60%;
+    }
+
+    #navbarText ul{
+        display:none;
+        visibility: hidden;
+    }
+
+    #hamburger-menu{
+        display:block;
+        visibility: visible;
+    }
+}
