@@ -78,7 +78,7 @@ header> div{
     color: white;
 }
 
-#hamburger-menu{
+#hamburger_menu{
     cursor: pointer;
     display:none;
     visibility: hidden;
@@ -94,6 +94,9 @@ header> div{
     display: flex;
     right: 10%;
 }
+.material-icons.environmentalistGreen:hover{
+    color: green;
+}
 #mobile_menu ul li{
    margin: 4rem 0;
    list-style: none;
@@ -101,6 +104,9 @@ header> div{
 #mobile_menu ul li a{
     color: white;
     text-decoration: none;
+}
+#mobile_menu ul li a:hover{
+    color: green;
 }
 
 @media (max-width:700px) {
@@ -118,7 +124,7 @@ header> div{
         visibility: hidden;
     }
 
-    #hamburger-menu{
+    #hamburger_menu{
         display:block;
         visibility: visible;
     }

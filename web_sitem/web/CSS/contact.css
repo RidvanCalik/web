@@ -24,6 +24,9 @@
     text-decoration: none;
     color: black;
 }
+.contact a:hover{
+    color: green;
+}
 
 @media (max-width:700px) {
     .contact ul{

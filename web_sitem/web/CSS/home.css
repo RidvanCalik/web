@@ -55,7 +55,7 @@
     font-size: large;
     background-color:gainsboro;
     color: black;
-    transition: 400ms ease-in-out;
+    transition: color,background-color 400ms ease-in-out;
     border: none;
     z-index: 1;
     border-radius: 50em;
