@@ -78,7 +78,7 @@ header> div{
     color: white;
 }
 
-#hamburger-menu{
+#hamburger_menu{
     cursor: pointer;
     display:none;
     visibility: hidden;
@@ -118,7 +118,7 @@ header> div{
         visibility: hidden;
     }
 
-    #hamburger-menu{
+    #hamburger_menu{
         display:block;
         visibility: visible;
     }
