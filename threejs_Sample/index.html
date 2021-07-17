@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>three.js webgl - particles - waves</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+    <h2>Uzaklara sür</h2>
+
+    <script type="module">
+
+        import * as THREE from './JS/three.module.js';
+
+        import { GLTFLoader } from './JS/GLTFLoader.js';
+
+        var bike;
+        let camera, scene, renderer;
+
+
+        let mouseX = 0, mouseY = 0;
+
+        let windowHalfX = window.innerWidth / 2;
+        let windowHalfY = window.innerHeight / 2;
+
+
+
+        function init() {
+
+            const container = document.createElement('div');
+            document.body.appendChild(container);
+
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xdddddd);
+
+            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 5000);
+            camera.position.z = 600;
+            camera.position.y = 100;
+
+            scene.add(camera);
+
+
+
+            const pointLight = new THREE.PointLight(0xffffff, 10);
+
+            camera.add(pointLight);
+
+
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+
+
+
+            let loader = new GLTFLoader();
+            loader.load('./models/bike/scene.gltf', function (gltf) {
+                bike = gltf.scene.children[0];
+                bike.scale.set(.2, .2, .2);
+                scene.add(bike);
+                animate();
+            });
+
+            console.log(scene);
+
+
+
+        }
+
+        function animate() {
+            setTimeout(function () {
+                bike.rotateZ(0.03);
+                requestAnimationFrame(animate);
+
+            }, 1000 / 30);
+
+            renderer.render(scene, camera);
+
+
+
+        }
+
+        init();
+
+
+
+    </script>
+</body>
+
+</html>

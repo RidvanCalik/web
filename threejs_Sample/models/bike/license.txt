@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Racing Bike
+* source:	https://sketchfab.com/3d-models/low-poly-racing-bike-557f70513c63494abfb289a3691557ba
+* author:	rautkrutant055 (https://sketchfab.com/rautkrutant055)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Racing Bike" (https://sketchfab.com/3d-models/low-poly-racing-bike-557f70513c63494abfb289a3691557ba) by rautkrutant055 (https://sketchfab.com/rautkrutant055) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
